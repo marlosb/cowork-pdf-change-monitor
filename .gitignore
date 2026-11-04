@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+*.snap.json.gz
+report*.json
+report*.md
+ai_payload.json
+# keep bundled samples
+!tests/samples/*.pdf
