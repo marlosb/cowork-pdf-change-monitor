@@ -1,0 +1,16 @@
+{
+  "_comment": "Copy to config.json and tune against two real editions. Keys starting with _ are ignored.",
+  "heading_regex": "^((\\d{1,3}(\\.\\d{1,3}){0,5}\\.?)|(chapter|section|cap[ií]tulo|se[cç][aã]o|annex|anexo|appendix|ap[eê]ndice)\\s+[\\dA-Z]+)\\s+\\S",
+  "heading_max_len": 150,
+  "repeat_line_threshold": 0.5,
+  "noise_regexes": [
+    "(page|p[aá]gina|p\\.)?\\s*\\d{1,4}(\\s*(of|de|/)\\s*\\d{1,4})?",
+    "[ivxlcdm]{1,6}"
+  ],
+  "strip_regexes": [
+    "(revised|revisado|atualizado|updated)( em| on)?:?\\s*\\d{1,2}[/.-]\\d{1,2}[/.-]\\d{2,4}"
+  ],
+  "ignore_cosmetic": true,
+  "ai_max_chars_per_change": 1500,
+  "ai_max_total_chars": 60000
+}
